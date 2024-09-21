@@ -1,0 +1,66 @@
+:root{
+    --flexBasis: 25%;
+}
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #f1f1f1;
+
+}
+
+
+
+.container{
+
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-wrap: wrap;
+    width: 80vh;
+    height: 80vh;
+    border: solid 4px #000;
+    margin: auto;
+
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-evenly;
+}
+.Box{
+    flex: 0 0 var(--flexBasis);
+    background-color: rgb(255, 174, 0);
+    /* border: springgreen 2px solid; */
+}
+
+.GBox{
+    background-color: black;
+}
+
+#btn, #btn2{
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+#btn2{
+    margin-left: auto;
+}
+
+#btn:hover,#btn2:hover{
+    background-color: #fff;
+    color: #000;
+}
+
